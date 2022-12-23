@@ -1,0 +1,94 @@
+.flex-container {
+    display: flex;
+    background-color: #485359;
+    flex-direction: row;
+}
+.flex-container > div {
+    margin: 10px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Merriweather', serif;
+    align-content: space-between;
+    padding: 25px;
+}
+.flex-container img {
+    height: 100px;
+    width: 170px;
+    align-content: space-between;
+}
+.orangeButton {
+    font-family: 'Montserrat', sans-serif;
+     font-weight: bold;
+     background-color: orange;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 25px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.19);
+}
+.body {
+    height: 500px;
+    width:900px;
+    
+}
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'img para'
+    'img bluebutton'; 
+    padding:30px;
+    gap: 10px;
+}
+
+ .header {
+    font-family: 'Merriweather', serif;
+    color: black;
+    font-size: 35px;
+
+ }
+.subHeader {
+    font-family: 'Merriweather', serif;
+    color: orange;
+    font-size: 30px;
+
+}
+.subSubHeader {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 15px;
+}
+.body img {
+    grid-area: img;
+    height: 279px;
+}
+
+.p {
+    grid-area: para;
+}
+.blueButton {
+    font-family: 'Montserrat', sans-serif;
+     font-weight: bold;
+     background-color: #469BBB;
+    border: none;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50px;
+    margin: 4px 2px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.19);
+    grid-area: bluebutton;
+ }
+
+ @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+      align-items: center;
+    }}
